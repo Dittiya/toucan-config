@@ -24,6 +24,15 @@
             #binding-cells = <0>;
             bindings = <&kp HOME>, <&kp END>;
         };
+
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            tapping-term-ms = <165>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
     };
 
     keymap {
