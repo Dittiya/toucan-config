@@ -23,9 +23,26 @@
         he: home_end {
             compatible = "zmk,behavior-tap-dance";
             label = "HOME_END";
+            tapping-term-ms = <165>;
             #binding-cells = <0>;
             bindings = <&kp HOME>, <&kp END>;
         };
+
+        ep: equal_plus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EQUAL_PLUS";
+            #binding-cells = <0>;
+            tapping-term-ms = <165>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+        }
+
+        mu: minus_underscore {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MINUS_UNDERSCORE";
+            tapping-term-ms = <165>;
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+        }
 
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
