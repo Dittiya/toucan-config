@@ -17,11 +17,36 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        
+        combo_ctrl_1 {
+            timeout-ms = <50>;
+            key-positions = <36 2>;
+            layers = <4>
+            bindings = <&kp LC(NUMBER_1)>;
+        };
+
+        combo_ctrl_2 {
+            timeout-ms = <50>;
+            key-positions = <36 3>;
+            layers = <4>
+            bindings = <&kp LC(NUMBER_2)>;
+        };
+
+        combo_ctrl_3 {
+            timeout-ms = <50>;
+            key-positions = <36 4>;
+            layers = <4>
+            bindings = <&kp LC(NUMBER_3)>;
+        };
+    };
+
     behaviors {
         he: home_end {
             compatible = "zmk,behavior-tap-dance";
             label = "HOME_END";
-            tapping-term-ms = <165>;
+            tapping-term-ms = <170>;
             #binding-cells = <0>;
             bindings = <&kp HOME>, <&kp END>;
         };
@@ -30,14 +55,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "EQUAL_PLUS";
             #binding-cells = <0>;
-            tapping-term-ms = <165>;
+            tapping-term-ms = <170>;
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
 
         mu: minus_underscore {
             compatible = "zmk,behavior-tap-dance";
             label = "MINUS_UNDERSCORE";
-            tapping-term-ms = <165>;
+            tapping-term-ms = <170>;
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp UNDER>;
         };
@@ -45,7 +70,7 @@
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
-            tapping-term-ms = <165>;
+            tapping-term-ms = <170>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
