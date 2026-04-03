@@ -40,6 +40,55 @@
             layers = <4>;
             bindings = <&kp LC(NUMBER_3)>;
         };
+
+        combo_ctrl_4 {
+            timeout-ms = <50>;
+            key-positions = <36 5>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_4)>;
+        };
+
+        combo_ctrl_5 {
+            timeout-ms = <50>;
+            key-positions = <36 0>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_5)>;
+        };
+
+        combo_ctrl_6 {
+            timeout-ms = <50>;
+            key-positions = <36 6>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_6)>;
+        };
+
+        combo_ctrl_7 {
+            timeout-ms = <50>;
+            key-positions = <36 7>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_7)>;
+        };
+        
+        combo_ctrl_8 {
+            timeout-ms = <50>;
+            key-positions = <36 8>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_8)>;
+        };
+
+        combo_ctrl_9 {
+            timeout-ms = <50>;
+            key-positions = <36 9>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_9)>;
+        };
+
+        combo_ctrl_0 {
+            timeout-ms = <50>;
+            key-positions = <36 10>;
+            layers = <4>;
+            bindings = <&kp LC(NUMBER_0)>;
+        };
     };
 
     behaviors {
@@ -115,7 +164,7 @@
             display-name = "NAV";
             bindings = <
 &kp TAB    &kp F1          &kp F2  &kp F3    &kp F4  &kp F5       &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
-&trans     &trans          &trans  &trans    &trans  &trans       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT     &trans        &kp F12
+&trans     &trans          &trans  &trans    &trans  &trans       &kp LEFT    &kp UP        &kp DOWN      &kp RIGHT     &trans        &kp F12
 &kp LSHFT  &studio_unlock  &trans  &trans    &trans  &trans       &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                    &kp LGUI  &trans  &kp SPACE    &kp RET     &trans        &kp RALT
             >;
